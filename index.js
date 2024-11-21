@@ -106,6 +106,12 @@ app.get("/bfhl", (req, res) => {
     res.status(200).json(response);
 });
 
+app.get("/", (req, res) => {
+    const response = {
+        msg: "Welcome to the API!",
+    };
+    res.status(200).json(response);
+});
 
 const PORT = 5555;
 app.listen(PORT, () => console.log(`Bajaj Finserv Health Challenge Server running on http://localhost:${PORT}`));
